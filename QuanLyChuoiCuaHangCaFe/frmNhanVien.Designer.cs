@@ -118,9 +118,9 @@
             this.lblMaNV.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMaNV.Location = new System.Drawing.Point(29, 38);
             this.lblMaNV.Name = "lblMaNV";
-            this.lblMaNV.Size = new System.Drawing.Size(39, 22);
+            this.lblMaNV.Size = new System.Drawing.Size(48, 22);
             this.lblMaNV.TabIndex = 0;
-            this.lblMaNV.Text = "tên:";
+            this.lblMaNV.Text = "Nghi";
             // 
             // groupBox2
             // 
