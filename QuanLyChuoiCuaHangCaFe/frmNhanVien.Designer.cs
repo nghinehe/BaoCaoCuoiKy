@@ -108,9 +108,9 @@
             this.lblTenNV.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTenNV.Location = new System.Drawing.Point(29, 89);
             this.lblTenNV.Name = "lblTenNV";
-            this.lblTenNV.Size = new System.Drawing.Size(126, 22);
+            this.lblTenNV.Size = new System.Drawing.Size(43, 22);
             this.lblTenNV.TabIndex = 1;
-            this.lblTenNV.Text = "Tên nhân viên:";
+            this.lblTenNV.Text = "ggh:";
             // 
             // lblMaNV
             // 
