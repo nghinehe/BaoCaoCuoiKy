@@ -41,8 +41,11 @@
             this.button2 = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.grbDanhSachSP = new System.Windows.Forms.GroupBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.grbThongTinSP.SuspendLayout();
+            this.grbDanhSachSP.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // grbThongTinSP
@@ -57,7 +60,7 @@
             this.grbThongTinSP.Controls.Add(this.lblTenSP);
             this.grbThongTinSP.Controls.Add(this.lblMaSP);
             this.grbThongTinSP.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grbThongTinSP.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.grbThongTinSP.ForeColor = System.Drawing.Color.DarkBlue;
             this.grbThongTinSP.Location = new System.Drawing.Point(28, 28);
             this.grbThongTinSP.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.grbThongTinSP.Name = "grbThongTinSP";
@@ -65,12 +68,13 @@
             this.grbThongTinSP.Size = new System.Drawing.Size(652, 277);
             this.grbThongTinSP.TabIndex = 0;
             this.grbThongTinSP.TabStop = false;
-            this.grbThongTinSP.Text = "THÔNG TIN SẢN PHẨM";
+            this.grbThongTinSP.Text = "•THÔNG TIN SẢN PHẨM";
             // 
             // lblMaSP
             // 
             this.lblMaSP.AutoSize = true;
             this.lblMaSP.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMaSP.ForeColor = System.Drawing.Color.Black;
             this.lblMaSP.Location = new System.Drawing.Point(33, 49);
             this.lblMaSP.Name = "lblMaSP";
             this.lblMaSP.Size = new System.Drawing.Size(142, 26);
@@ -81,6 +85,7 @@
             // 
             this.lblTenSP.AutoSize = true;
             this.lblTenSP.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTenSP.ForeColor = System.Drawing.Color.Black;
             this.lblTenSP.Location = new System.Drawing.Point(33, 106);
             this.lblTenSP.Name = "lblTenSP";
             this.lblTenSP.Size = new System.Drawing.Size(149, 26);
@@ -91,6 +96,7 @@
             // 
             this.lblGia.AutoSize = true;
             this.lblGia.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGia.ForeColor = System.Drawing.Color.Black;
             this.lblGia.Location = new System.Drawing.Point(33, 167);
             this.lblGia.Name = "lblGia";
             this.lblGia.Size = new System.Drawing.Size(120, 26);
@@ -128,7 +134,7 @@
             this.btnThem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnThem.ImageIndex = 0;
             this.btnThem.ImageList = this.imageList1;
-            this.btnThem.Location = new System.Drawing.Point(62, 211);
+            this.btnThem.Location = new System.Drawing.Point(62, 212);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(113, 49);
             this.btnThem.TabIndex = 6;
@@ -175,21 +181,33 @@
             this.imageList1.Images.SetKeyName(1, "tools_17410833.png");
             this.imageList1.Images.SetKeyName(2, "delete_12530858.png");
             // 
-            // groupBox1
+            // grbDanhSachSP
             // 
-            this.groupBox1.Location = new System.Drawing.Point(28, 314);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(200, 100);
-            this.groupBox1.TabIndex = 1;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
+            this.grbDanhSachSP.Controls.Add(this.dataGridView1);
+            this.grbDanhSachSP.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grbDanhSachSP.Location = new System.Drawing.Point(28, 314);
+            this.grbDanhSachSP.Name = "grbDanhSachSP";
+            this.grbDanhSachSP.Size = new System.Drawing.Size(652, 286);
+            this.grbDanhSachSP.TabIndex = 1;
+            this.grbDanhSachSP.TabStop = false;
+            this.grbDanhSachSP.Text = "•DANH SÁCH SẢN PHẨM";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(6, 32);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(640, 241);
+            this.dataGridView1.TabIndex = 0;
             // 
             // frmQLSanPham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1200, 703);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.grbDanhSachSP);
             this.Controls.Add(this.grbThongTinSP);
             this.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -199,6 +217,8 @@
             this.Load += new System.EventHandler(this.SanPham_Load);
             this.grbThongTinSP.ResumeLayout(false);
             this.grbThongTinSP.PerformLayout();
+            this.grbDanhSachSP.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -216,6 +236,7 @@
         private System.Windows.Forms.Label lblTenSP;
         private System.Windows.Forms.Label lblMaSP;
         private System.Windows.Forms.ImageList imageList1;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox grbDanhSachSP;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
