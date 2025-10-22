@@ -38,9 +38,9 @@
             this.thoátToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
+            this.CNtoolStripButton2 = new System.Windows.Forms.ToolStripButton();
+            this.SPtoolStripButton3 = new System.Windows.Forms.ToolStripButton();
+            this.HDtoolStripButton4 = new System.Windows.Forms.ToolStripButton();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -72,28 +72,30 @@
             // nhânViênToolStripMenuItem
             // 
             this.nhânViênToolStripMenuItem.Name = "nhânViênToolStripMenuItem";
-            this.nhânViênToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.nhânViênToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
             this.nhânViênToolStripMenuItem.Text = "Nhân viên";
             this.nhânViênToolStripMenuItem.Click += new System.EventHandler(this.nhânViênToolStripMenuItem_Click);
             // 
             // chiNhánhToolStripMenuItem
             // 
             this.chiNhánhToolStripMenuItem.Name = "chiNhánhToolStripMenuItem";
-            this.chiNhánhToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.chiNhánhToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
             this.chiNhánhToolStripMenuItem.Text = "Chi nhánh";
             this.chiNhánhToolStripMenuItem.Click += new System.EventHandler(this.chiNhánhToolStripMenuItem_Click);
             // 
             // sảnToolStripMenuItem
             // 
             this.sảnToolStripMenuItem.Name = "sảnToolStripMenuItem";
-            this.sảnToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.sảnToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
             this.sảnToolStripMenuItem.Text = "Sản phẩm";
+            this.sảnToolStripMenuItem.Click += new System.EventHandler(this.sảnToolStripMenuItem_Click);
             // 
             // hóaĐơnToolStripMenuItem
             // 
             this.hóaĐơnToolStripMenuItem.Name = "hóaĐơnToolStripMenuItem";
-            this.hóaĐơnToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.hóaĐơnToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
             this.hóaĐơnToolStripMenuItem.Text = "Hóa đơn";
+            this.hóaĐơnToolStripMenuItem.Click += new System.EventHandler(this.hóaĐơnToolStripMenuItem_Click);
             // 
             // hệThốngToolStripMenuItem
             // 
@@ -116,9 +118,9 @@
             this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripButton1,
-            this.toolStripButton2,
-            this.toolStripButton3,
-            this.toolStripButton4});
+            this.CNtoolStripButton2,
+            this.SPtoolStripButton3,
+            this.HDtoolStripButton4});
             this.toolStrip1.Location = new System.Drawing.Point(0, 30);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(1200, 27);
@@ -133,33 +135,37 @@
             this.toolStripButton1.Name = "toolStripButton1";
             this.toolStripButton1.Size = new System.Drawing.Size(107, 24);
             this.toolStripButton1.Text = "Nhân viên";
+            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
-            // toolStripButton2
+            // CNtoolStripButton2
             // 
-            this.toolStripButton2.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolStripButton2.Image = global::QuanLyChuoiCuaHangCaFe.Properties.Resources.cafe_9620771;
-            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(107, 24);
-            this.toolStripButton2.Text = "Chi nhánh";
+            this.CNtoolStripButton2.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CNtoolStripButton2.Image = global::QuanLyChuoiCuaHangCaFe.Properties.Resources.cafe_9620771;
+            this.CNtoolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.CNtoolStripButton2.Name = "CNtoolStripButton2";
+            this.CNtoolStripButton2.Size = new System.Drawing.Size(107, 24);
+            this.CNtoolStripButton2.Text = "Chi nhánh";
+            this.CNtoolStripButton2.Click += new System.EventHandler(this.CNtoolStripButton2_Click);
             // 
-            // toolStripButton3
+            // SPtoolStripButton3
             // 
-            this.toolStripButton3.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolStripButton3.Image = global::QuanLyChuoiCuaHangCaFe.Properties.Resources.take_away_9620954;
-            this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton3.Name = "toolStripButton3";
-            this.toolStripButton3.Size = new System.Drawing.Size(105, 24);
-            this.toolStripButton3.Text = "Sản phẩm";
+            this.SPtoolStripButton3.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SPtoolStripButton3.Image = global::QuanLyChuoiCuaHangCaFe.Properties.Resources.take_away_9620954;
+            this.SPtoolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.SPtoolStripButton3.Name = "SPtoolStripButton3";
+            this.SPtoolStripButton3.Size = new System.Drawing.Size(105, 24);
+            this.SPtoolStripButton3.Text = "Sản phẩm";
+            this.SPtoolStripButton3.Click += new System.EventHandler(this.SPtoolStripButton3_Click);
             // 
-            // toolStripButton4
+            // HDtoolStripButton4
             // 
-            this.toolStripButton4.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolStripButton4.Image = global::QuanLyChuoiCuaHangCaFe.Properties.Resources.bill_6295902;
-            this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton4.Name = "toolStripButton4";
-            this.toolStripButton4.Size = new System.Drawing.Size(96, 24);
-            this.toolStripButton4.Text = "Hóa đơn";
+            this.HDtoolStripButton4.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HDtoolStripButton4.Image = global::QuanLyChuoiCuaHangCaFe.Properties.Resources.bill_6295902;
+            this.HDtoolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.HDtoolStripButton4.Name = "HDtoolStripButton4";
+            this.HDtoolStripButton4.Size = new System.Drawing.Size(96, 24);
+            this.HDtoolStripButton4.Text = "Hóa đơn";
+            this.HDtoolStripButton4.Click += new System.EventHandler(this.HDtoolStripButton4_Click);
             // 
             // frmMain
             // 
@@ -200,9 +206,9 @@
         private System.Windows.Forms.ToolStripMenuItem hóaĐơnToolStripMenuItem;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
-        private System.Windows.Forms.ToolStripButton toolStripButton2;
-        private System.Windows.Forms.ToolStripButton toolStripButton3;
-        private System.Windows.Forms.ToolStripButton toolStripButton4;
+        private System.Windows.Forms.ToolStripButton CNtoolStripButton2;
+        private System.Windows.Forms.ToolStripButton SPtoolStripButton3;
+        private System.Windows.Forms.ToolStripButton HDtoolStripButton4;
     }
 }
 

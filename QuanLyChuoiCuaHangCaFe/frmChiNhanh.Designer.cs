@@ -197,14 +197,14 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(620, 182);
+            this.dataGridView1.Size = new System.Drawing.Size(620, 197);
             this.dataGridView1.TabIndex = 0;
             // 
             // frmChiNhanh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1300, 703);
+            this.ClientSize = new System.Drawing.Size(700, 572);
             this.Controls.Add(this.grbDanhSachCN);
             this.Controls.Add(this.grbChiNhanh);
             this.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
