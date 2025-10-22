@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace QuanLyChuoiCuaHangCaFe
 {
-    public partial class frmChiNhanh : Form
+    public partial class SanPham : Form
     {
-        public frmChiNhanh()
+        public SanPham()
         {
             InitializeComponent();
-        }
-
-        private void labDiaChi_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
