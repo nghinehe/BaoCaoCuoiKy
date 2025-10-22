@@ -36,10 +36,12 @@
             this.lblCN = new System.Windows.Forms.Label();
             this.lblTenNV = new System.Windows.Forms.Label();
             this.lblMaNV = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.grbDanhsachNV = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnSua = new System.Windows.Forms.Button();
+            this.btnXoa = new System.Windows.Forms.Button();
             this.grbThongTinNhanVien.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.grbDanhsachNV.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -48,14 +50,16 @@
             this.grbThongTinNhanVien.Controls.Add(this.textBox3);
             this.grbThongTinNhanVien.Controls.Add(this.textBox2);
             this.grbThongTinNhanVien.Controls.Add(this.textBox1);
+            this.grbThongTinNhanVien.Controls.Add(this.btnXoa);
+            this.grbThongTinNhanVien.Controls.Add(this.btnSua);
             this.grbThongTinNhanVien.Controls.Add(this.btnThem);
             this.grbThongTinNhanVien.Controls.Add(this.lblCN);
             this.grbThongTinNhanVien.Controls.Add(this.lblTenNV);
             this.grbThongTinNhanVien.Controls.Add(this.lblMaNV);
             this.grbThongTinNhanVien.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grbThongTinNhanVien.Location = new System.Drawing.Point(50, 44);
+            this.grbThongTinNhanVien.Location = new System.Drawing.Point(32, 42);
             this.grbThongTinNhanVien.Name = "grbThongTinNhanVien";
-            this.grbThongTinNhanVien.Size = new System.Drawing.Size(630, 210);
+            this.grbThongTinNhanVien.Size = new System.Drawing.Size(606, 226);
             this.grbThongTinNhanVien.TabIndex = 0;
             this.grbThongTinNhanVien.TabStop = false;
             this.grbThongTinNhanVien.Text = "• Thông Tin Nhân Viên";
@@ -108,9 +112,9 @@
             this.lblTenNV.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTenNV.Location = new System.Drawing.Point(29, 89);
             this.lblTenNV.Name = "lblTenNV";
-            this.lblTenNV.Size = new System.Drawing.Size(40, 22);
+            this.lblTenNV.Size = new System.Drawing.Size(131, 22);
             this.lblTenNV.TabIndex = 1;
-            this.lblTenNV.Text = "bbb";
+            this.lblTenNV.Text = "Tên nhân viên: ";
             // 
             // lblMaNV
             // 
@@ -118,42 +122,65 @@
             this.lblMaNV.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMaNV.Location = new System.Drawing.Point(29, 38);
             this.lblMaNV.Name = "lblMaNV";
-            this.lblMaNV.Size = new System.Drawing.Size(48, 22);
+            this.lblMaNV.Size = new System.Drawing.Size(127, 22);
             this.lblMaNV.TabIndex = 0;
-            this.lblMaNV.Text = "Nghi";
+            this.lblMaNV.Text = "Mã nhân viên: ";
             // 
-            // groupBox2
+            // grbDanhsachNV
             // 
-            this.groupBox2.Controls.Add(this.dataGridView1);
-            this.groupBox2.Location = new System.Drawing.Point(50, 300);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(630, 255);
-            this.groupBox2.TabIndex = 1;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "groupBox2";
+            this.grbDanhsachNV.Controls.Add(this.dataGridView1);
+            this.grbDanhsachNV.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grbDanhsachNV.Location = new System.Drawing.Point(32, 274);
+            this.grbDanhsachNV.Name = "grbDanhsachNV";
+            this.grbDanhsachNV.Size = new System.Drawing.Size(630, 255);
+            this.grbDanhsachNV.TabIndex = 1;
+            this.grbDanhsachNV.TabStop = false;
+            this.grbDanhsachNV.Text = "• Danh Sách Nhân Viên ";
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(55, 38);
+            this.dataGridView1.Location = new System.Drawing.Point(6, 32);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(240, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(600, 255);
             this.dataGridView1.TabIndex = 0;
+            // 
+            // btnSua
+            // 
+            this.btnSua.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSua.Location = new System.Drawing.Point(211, 175);
+            this.btnSua.Name = "btnSua";
+            this.btnSua.Size = new System.Drawing.Size(84, 29);
+            this.btnSua.TabIndex = 3;
+            this.btnSua.Text = "Sửa";
+            this.btnSua.UseVisualStyleBackColor = true;
+            // 
+            // btnXoa
+            // 
+            this.btnXoa.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoa.Location = new System.Drawing.Point(329, 175);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(84, 29);
+            this.btnXoa.TabIndex = 3;
+            this.btnXoa.Text = "Xóa";
+            this.btnXoa.UseVisualStyleBackColor = true;
             // 
             // frmNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(756, 592);
-            this.Controls.Add(this.groupBox2);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(673, 573);
+            this.Controls.Add(this.grbDanhsachNV);
             this.Controls.Add(this.grbThongTinNhanVien);
             this.Name = "frmNhanVien";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản lý nhân viên";
             this.grbThongTinNhanVien.ResumeLayout(false);
             this.grbThongTinNhanVien.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
+            this.grbDanhsachNV.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
@@ -167,9 +194,11 @@
         private System.Windows.Forms.Label lblTenNV;
         private System.Windows.Forms.Label lblMaNV;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox grbDanhsachNV;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button btnXoa;
+        private System.Windows.Forms.Button btnSua;
     }
 }

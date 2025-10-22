@@ -22,6 +22,17 @@ namespace QuanLyChuoiCuaHangCaFe
 
         }
 
-        
+        private void nhânViênToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmNhanVien fNhanVien = new frmNhanVien();
+            fNhanVien.MdiParent = this;
+            fNhanVien.Show();
+
+        }
+
+        private void chiNhánhToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
