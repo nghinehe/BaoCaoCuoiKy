@@ -21,5 +21,10 @@ namespace QuanLyChuoiCuaHangCaFe
         {
 
         }
+
+        private void grbChiNhanh_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

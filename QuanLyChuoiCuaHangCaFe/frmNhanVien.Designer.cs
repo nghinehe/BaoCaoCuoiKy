@@ -114,6 +114,7 @@
             // 
             this.lblCN.AutoSize = true;
             this.lblCN.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCN.ForeColor = System.Drawing.Color.Black;
             this.lblCN.Location = new System.Drawing.Point(28, 160);
             this.lblCN.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCN.Name = "lblCN";
@@ -126,6 +127,7 @@
             // 
             this.lblTenNV.AutoSize = true;
             this.lblTenNV.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTenNV.ForeColor = System.Drawing.Color.Black;
             this.lblTenNV.Location = new System.Drawing.Point(28, 106);
             this.lblTenNV.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTenNV.Name = "lblTenNV";
@@ -137,6 +139,7 @@
             // 
             this.lblMaNV.AutoSize = true;
             this.lblMaNV.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMaNV.ForeColor = System.Drawing.Color.Black;
             this.lblMaNV.Location = new System.Drawing.Point(28, 53);
             this.lblMaNV.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMaNV.Name = "lblMaNV";
@@ -220,6 +223,7 @@
             this.Controls.Add(this.grbDanhsachNV);
             this.Controls.Add(this.grbThongTinNhanVien);
             this.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmNhanVien";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
