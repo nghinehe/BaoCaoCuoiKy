@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace QuanLyChuoiCuaHangCaFe
 {
-    public partial class SanPham : Form
+    public partial class frmQLSanPham : Form
     {
-        public SanPham()
+        public frmQLSanPham()
         {
             InitializeComponent();
+        }
+
+        private void SanPham_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

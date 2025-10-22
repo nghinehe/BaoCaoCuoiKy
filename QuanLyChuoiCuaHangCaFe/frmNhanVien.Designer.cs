@@ -31,16 +31,16 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmNhanVien));
             this.grbThongTinNhanVien = new System.Windows.Forms.GroupBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.btnXoa = new System.Windows.Forms.Button();
+            this.txtChiNhanh = new System.Windows.Forms.TextBox();
+            this.txtTenNV = new System.Windows.Forms.TextBox();
+            this.txtMaNV = new System.Windows.Forms.TextBox();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.lblCN = new System.Windows.Forms.Label();
             this.lblTenNV = new System.Windows.Forms.Label();
             this.lblMaNV = new System.Windows.Forms.Label();
             this.grbDanhsachNV = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.btnXoa = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
             this.grbThongTinNhanVien.SuspendLayout();
@@ -50,9 +50,9 @@
             // 
             // grbThongTinNhanVien
             // 
-            this.grbThongTinNhanVien.Controls.Add(this.textBox3);
-            this.grbThongTinNhanVien.Controls.Add(this.textBox2);
-            this.grbThongTinNhanVien.Controls.Add(this.textBox1);
+            this.grbThongTinNhanVien.Controls.Add(this.txtChiNhanh);
+            this.grbThongTinNhanVien.Controls.Add(this.txtTenNV);
+            this.grbThongTinNhanVien.Controls.Add(this.txtMaNV);
             this.grbThongTinNhanVien.Controls.Add(this.btnXoa);
             this.grbThongTinNhanVien.Controls.Add(this.btnSua);
             this.grbThongTinNhanVien.Controls.Add(this.btnThem);
@@ -70,45 +70,38 @@
             this.grbThongTinNhanVien.TabStop = false;
             this.grbThongTinNhanVien.Text = "• THÔNG TIN NHÂN VIÊN";
             // 
-            // textBox3
+            // txtChiNhanh
             // 
-            this.textBox3.Location = new System.Drawing.Point(176, 154);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(368, 33);
-            this.textBox3.TabIndex = 4;
+            this.txtChiNhanh.Location = new System.Drawing.Point(176, 154);
+            this.txtChiNhanh.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtChiNhanh.Name = "txtChiNhanh";
+            this.txtChiNhanh.Size = new System.Drawing.Size(368, 33);
+            this.txtChiNhanh.TabIndex = 4;
             // 
-            // textBox2
+            // txtTenNV
             // 
-            this.textBox2.Location = new System.Drawing.Point(176, 100);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(368, 33);
-            this.textBox2.TabIndex = 4;
+            this.txtTenNV.Location = new System.Drawing.Point(176, 100);
+            this.txtTenNV.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtTenNV.Name = "txtTenNV";
+            this.txtTenNV.Size = new System.Drawing.Size(368, 33);
+            this.txtTenNV.TabIndex = 4;
             // 
-            // textBox1
+            // txtMaNV
             // 
-            this.textBox1.Location = new System.Drawing.Point(176, 47);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(368, 33);
-            this.textBox1.TabIndex = 4;
+            this.txtMaNV.Location = new System.Drawing.Point(176, 47);
+            this.txtMaNV.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtMaNV.Name = "txtMaNV";
+            this.txtMaNV.Size = new System.Drawing.Size(368, 33);
+            this.txtMaNV.TabIndex = 4;
             // 
-            // btnXoa
+            // imageList1
             // 
-            this.btnXoa.BackColor = System.Drawing.Color.Crimson;
-            this.btnXoa.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoa.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnXoa.ImageIndex = 3;
-            this.btnXoa.ImageList = this.imageList1;
-            this.btnXoa.Location = new System.Drawing.Point(418, 219);
-            this.btnXoa.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(126, 45);
-            this.btnXoa.TabIndex = 3;
-            this.btnXoa.Text = " Xóa";
-            this.btnXoa.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnXoa.UseVisualStyleBackColor = false;
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "add_15526434.png");
+            this.imageList1.Images.SetKeyName(1, "tools_17410833.png");
+            this.imageList1.Images.SetKeyName(2, "delete_3625005.png");
+            this.imageList1.Images.SetKeyName(3, "delete_12530858.png");
             // 
             // lblCN
             // 
@@ -172,14 +165,21 @@
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // imageList1
+            // btnXoa
             // 
-            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "add_15526434.png");
-            this.imageList1.Images.SetKeyName(1, "tools_17410833.png");
-            this.imageList1.Images.SetKeyName(2, "delete_3625005.png");
-            this.imageList1.Images.SetKeyName(3, "delete_12530858.png");
+            this.btnXoa.BackColor = System.Drawing.Color.Crimson;
+            this.btnXoa.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoa.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnXoa.ImageIndex = 3;
+            this.btnXoa.ImageList = this.imageList1;
+            this.btnXoa.Location = new System.Drawing.Point(418, 219);
+            this.btnXoa.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(126, 45);
+            this.btnXoa.TabIndex = 3;
+            this.btnXoa.Text = " Xóa";
+            this.btnXoa.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnXoa.UseVisualStyleBackColor = false;
             // 
             // btnSua
             // 
@@ -243,11 +243,11 @@
         private System.Windows.Forms.Label lblCN;
         private System.Windows.Forms.Label lblTenNV;
         private System.Windows.Forms.Label lblMaNV;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtMaNV;
         private System.Windows.Forms.GroupBox grbDanhsachNV;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtChiNhanh;
+        private System.Windows.Forms.TextBox txtTenNV;
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.ImageList imageList1;
