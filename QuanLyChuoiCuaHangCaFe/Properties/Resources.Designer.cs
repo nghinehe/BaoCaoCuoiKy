@@ -63,6 +63,16 @@ namespace QuanLyChuoiCuaHangCaFe.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap add_15526434 {
+            get {
+                object obj = ResourceManager.GetObject("add_15526434", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bill_6295902 {
             get {
                 object obj = ResourceManager.GetObject("bill_6295902", resourceCulture);
@@ -166,6 +176,16 @@ namespace QuanLyChuoiCuaHangCaFe.Properties {
         internal static System.Drawing.Bitmap take_away_9620954 {
             get {
                 object obj = ResourceManager.GetObject("take-away_9620954", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tools_17410833 {
+            get {
+                object obj = ResourceManager.GetObject("tools_17410833", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

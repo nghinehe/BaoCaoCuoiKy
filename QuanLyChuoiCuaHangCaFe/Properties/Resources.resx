@@ -133,6 +133,9 @@
   <data name="nhanvien" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\nhanvien.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="merchant_3857265" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\merchant_3857265.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="nen" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\nen.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -142,13 +145,16 @@
   <data name="bill_6295902" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bill_6295902.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="add_15526434" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\add_15526434.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="nenMain" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\nenMain.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cafe_9620771" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cafe_9620771.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="merchant_3857265" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\merchant_3857265.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="tools_17410833" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tools_17410833.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

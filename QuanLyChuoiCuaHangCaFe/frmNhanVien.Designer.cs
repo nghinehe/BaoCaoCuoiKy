@@ -28,18 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmNhanVien));
             this.grbThongTinNhanVien = new System.Windows.Forms.GroupBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.btnXoa = new System.Windows.Forms.Button();
-            this.btnSua = new System.Windows.Forms.Button();
-            this.btnThem = new System.Windows.Forms.Button();
             this.lblCN = new System.Windows.Forms.Label();
             this.lblTenNV = new System.Windows.Forms.Label();
             this.lblMaNV = new System.Windows.Forms.Label();
             this.grbDanhsachNV = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.btnSua = new System.Windows.Forms.Button();
+            this.btnThem = new System.Windows.Forms.Button();
             this.grbThongTinNhanVien.SuspendLayout();
             this.grbDanhsachNV.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -57,6 +60,7 @@
             this.grbThongTinNhanVien.Controls.Add(this.lblTenNV);
             this.grbThongTinNhanVien.Controls.Add(this.lblMaNV);
             this.grbThongTinNhanVien.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grbThongTinNhanVien.ForeColor = System.Drawing.Color.DarkBlue;
             this.grbThongTinNhanVien.Location = new System.Drawing.Point(25, 26);
             this.grbThongTinNhanVien.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.grbThongTinNhanVien.Name = "grbThongTinNhanVien";
@@ -92,37 +96,19 @@
             // 
             // btnXoa
             // 
+            this.btnXoa.BackColor = System.Drawing.Color.Crimson;
             this.btnXoa.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoa.Location = new System.Drawing.Point(418, 217);
+            this.btnXoa.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnXoa.ImageIndex = 3;
+            this.btnXoa.ImageList = this.imageList1;
+            this.btnXoa.Location = new System.Drawing.Point(418, 219);
             this.btnXoa.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(126, 45);
             this.btnXoa.TabIndex = 3;
-            this.btnXoa.Text = "Xóa";
-            this.btnXoa.UseVisualStyleBackColor = true;
-            // 
-            // btnSua
-            // 
-            this.btnSua.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSua.Location = new System.Drawing.Point(240, 217);
-            this.btnSua.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(126, 45);
-            this.btnSua.TabIndex = 3;
-            this.btnSua.Text = "Sửa";
-            this.btnSua.UseVisualStyleBackColor = true;
-            // 
-            // btnThem
-            // 
-            this.btnThem.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThem.Location = new System.Drawing.Point(59, 217);
-            this.btnThem.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(126, 45);
-            this.btnThem.TabIndex = 3;
-            this.btnThem.Text = "Thêm ";
-            this.btnThem.UseVisualStyleBackColor = true;
-            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
+            this.btnXoa.Text = " Xóa";
+            this.btnXoa.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnXoa.UseVisualStyleBackColor = false;
             // 
             // lblCN
             // 
@@ -183,11 +169,53 @@
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "add_15526434.png");
+            this.imageList1.Images.SetKeyName(1, "tools_17410833.png");
+            this.imageList1.Images.SetKeyName(2, "delete_3625005.png");
+            this.imageList1.Images.SetKeyName(3, "delete_12530858.png");
+            // 
+            // btnSua
+            // 
+            this.btnSua.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnSua.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSua.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnSua.ImageIndex = 1;
+            this.btnSua.ImageList = this.imageList1;
+            this.btnSua.Location = new System.Drawing.Point(240, 219);
+            this.btnSua.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnSua.Name = "btnSua";
+            this.btnSua.Size = new System.Drawing.Size(126, 45);
+            this.btnSua.TabIndex = 3;
+            this.btnSua.Text = " Sửa";
+            this.btnSua.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSua.UseVisualStyleBackColor = false;
+            // 
+            // btnThem
+            // 
+            this.btnThem.BackColor = System.Drawing.Color.LimeGreen;
+            this.btnThem.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnThem.ImageIndex = 0;
+            this.btnThem.ImageList = this.imageList1;
+            this.btnThem.Location = new System.Drawing.Point(62, 219);
+            this.btnThem.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Size = new System.Drawing.Size(126, 45);
+            this.btnThem.TabIndex = 3;
+            this.btnThem.Text = " Thêm ";
+            this.btnThem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnThem.UseVisualStyleBackColor = false;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
+            // 
             // frmNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.Snow;
             this.ClientSize = new System.Drawing.Size(1103, 578);
             this.Controls.Add(this.grbDanhsachNV);
             this.Controls.Add(this.grbThongTinNhanVien);
@@ -218,5 +246,6 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnSua;
+        private System.Windows.Forms.ImageList imageList1;
     }
 }
