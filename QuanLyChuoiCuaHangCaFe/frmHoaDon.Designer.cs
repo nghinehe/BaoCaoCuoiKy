@@ -39,15 +39,12 @@
             this.lblMaHD = new System.Windows.Forms.Label();
             this.dtpNgayLap = new System.Windows.Forms.DateTimePicker();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.btnThem = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnLuu = new System.Windows.Forms.Button();
             this.grbThongTinHD.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // txtMaHD
@@ -81,7 +78,7 @@
             this.grbThongTinHD.Size = new System.Drawing.Size(754, 275);
             this.grbThongTinHD.TabIndex = 1;
             this.grbThongTinHD.TabStop = false;
-            this.grbThongTinHD.Text = "• THÔNG TIN HÓA ĐƠN";
+            this.grbThongTinHD.Text = "• THÔNG TIN CHUNG";
             this.grbThongTinHD.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // btnXemChiTietHD
@@ -159,7 +156,8 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.dataGridView1);
+            this.groupBox2.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.ForeColor = System.Drawing.Color.Navy;
             this.groupBox2.Location = new System.Drawing.Point(27, 309);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBox2.Name = "groupBox2";
@@ -167,18 +165,7 @@
             this.groupBox2.Size = new System.Drawing.Size(754, 389);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "groupBox2";
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(165, 75);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(360, 234);
-            this.dataGridView1.TabIndex = 0;
+            this.groupBox2.Text = "• THÔNG TIN HÓA ĐƠN";
             // 
             // imageList1
             // 
@@ -264,8 +251,6 @@
             this.Text = "Quản lý hóa đơn";
             this.grbThongTinHD.ResumeLayout(false);
             this.grbThongTinHD.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -280,7 +265,6 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label lblChinhanh;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnXemChiTietHD;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.Button btnXoa;
