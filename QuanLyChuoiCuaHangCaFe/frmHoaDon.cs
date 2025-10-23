@@ -21,5 +21,15 @@ namespace QuanLyChuoiCuaHangCaFe
         {
 
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblChinhanh_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

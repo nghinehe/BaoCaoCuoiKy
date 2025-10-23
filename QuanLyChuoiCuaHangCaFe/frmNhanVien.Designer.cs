@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmNhanVien));
             this.grbThongTinNhanVien = new System.Windows.Forms.GroupBox();
-            this.txtChiNhanh = new System.Windows.Forms.TextBox();
             this.txtTenNV = new System.Windows.Forms.TextBox();
             this.txtMaNV = new System.Windows.Forms.TextBox();
             this.btnXoa = new System.Windows.Forms.Button();
@@ -43,6 +42,7 @@
             this.lblMaNV = new System.Windows.Forms.Label();
             this.grbDanhsachNV = new System.Windows.Forms.GroupBox();
             this.dgvNhanVien = new System.Windows.Forms.DataGridView();
+            this.cboChiNhanh = new System.Windows.Forms.ComboBox();
             this.grbThongTinNhanVien.SuspendLayout();
             this.grbDanhsachNV.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVien)).BeginInit();
@@ -50,7 +50,7 @@
             // 
             // grbThongTinNhanVien
             // 
-            this.grbThongTinNhanVien.Controls.Add(this.txtChiNhanh);
+            this.grbThongTinNhanVien.Controls.Add(this.cboChiNhanh);
             this.grbThongTinNhanVien.Controls.Add(this.txtTenNV);
             this.grbThongTinNhanVien.Controls.Add(this.txtMaNV);
             this.grbThongTinNhanVien.Controls.Add(this.btnXoa);
@@ -70,14 +70,6 @@
             this.grbThongTinNhanVien.TabStop = false;
             this.grbThongTinNhanVien.Text = "• THÔNG TIN NHÂN VIÊN";
             // 
-            // txtChiNhanh
-            // 
-            this.txtChiNhanh.Location = new System.Drawing.Point(176, 154);
-            this.txtChiNhanh.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtChiNhanh.Name = "txtChiNhanh";
-            this.txtChiNhanh.Size = new System.Drawing.Size(368, 33);
-            this.txtChiNhanh.TabIndex = 4;
-            // 
             // txtTenNV
             // 
             this.txtTenNV.Location = new System.Drawing.Point(176, 100);
@@ -91,6 +83,7 @@
             this.txtMaNV.Location = new System.Drawing.Point(176, 47);
             this.txtMaNV.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtMaNV.Name = "txtMaNV";
+            this.txtMaNV.ReadOnly = true;
             this.txtMaNV.Size = new System.Drawing.Size(368, 33);
             this.txtMaNV.TabIndex = 4;
             // 
@@ -215,6 +208,14 @@
             this.dgvNhanVien.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvNhanVien_CellClick);
             this.dgvNhanVien.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
+            // cboChiNhanh
+            // 
+            this.cboChiNhanh.FormattingEnabled = true;
+            this.cboChiNhanh.Location = new System.Drawing.Point(176, 154);
+            this.cboChiNhanh.Name = "cboChiNhanh";
+            this.cboChiNhanh.Size = new System.Drawing.Size(368, 33);
+            this.cboChiNhanh.TabIndex = 5;
+            // 
             // frmNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -248,10 +249,10 @@
         private System.Windows.Forms.TextBox txtMaNV;
         private System.Windows.Forms.GroupBox grbDanhsachNV;
         private System.Windows.Forms.DataGridView dgvNhanVien;
-        private System.Windows.Forms.TextBox txtChiNhanh;
         private System.Windows.Forms.TextBox txtTenNV;
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.ImageList imageList1;
+        private System.Windows.Forms.ComboBox cboChiNhanh;
     }
 }
