@@ -44,7 +44,11 @@
             this.btnSua = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnLuu = new System.Windows.Forms.Button();
+            this.cboThemMon = new System.Windows.Forms.ComboBox();
+            this.lblThemMon = new System.Windows.Forms.Label();
+            this.btnThemMon = new System.Windows.Forms.Button();
             this.grbThongTinHD.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtMaHD
@@ -156,13 +160,16 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.btnThemMon);
+            this.groupBox2.Controls.Add(this.lblThemMon);
+            this.groupBox2.Controls.Add(this.cboThemMon);
             this.groupBox2.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.Color.Navy;
             this.groupBox2.Location = new System.Drawing.Point(27, 309);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox2.Size = new System.Drawing.Size(754, 389);
+            this.groupBox2.Size = new System.Drawing.Size(754, 181);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "• THÔNG TIN HÓA ĐƠN";
@@ -237,6 +244,37 @@
             this.btnLuu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnLuu.UseVisualStyleBackColor = false;
             // 
+            // cboThemMon
+            // 
+            this.cboThemMon.FormattingEnabled = true;
+            this.cboThemMon.Location = new System.Drawing.Point(281, 53);
+            this.cboThemMon.Name = "cboThemMon";
+            this.cboThemMon.Size = new System.Drawing.Size(201, 33);
+            this.cboThemMon.TabIndex = 0;
+            // 
+            // lblThemMon
+            // 
+            this.lblThemMon.AutoSize = true;
+            this.lblThemMon.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblThemMon.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblThemMon.Location = new System.Drawing.Point(32, 56);
+            this.lblThemMon.Name = "lblThemMon";
+            this.lblThemMon.Size = new System.Drawing.Size(230, 26);
+            this.lblThemMon.TabIndex = 1;
+            this.lblThemMon.Text = "➕ Thêm món vào HĐ:";
+            // 
+            // btnThemMon
+            // 
+            this.btnThemMon.BackColor = System.Drawing.Color.SkyBlue;
+            this.btnThemMon.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThemMon.ForeColor = System.Drawing.Color.DarkBlue;
+            this.btnThemMon.Location = new System.Drawing.Point(54, 108);
+            this.btnThemMon.Name = "btnThemMon";
+            this.btnThemMon.Size = new System.Drawing.Size(127, 45);
+            this.btnThemMon.TabIndex = 2;
+            this.btnThemMon.Text = "Thêm món";
+            this.btnThemMon.UseVisualStyleBackColor = false;
+            // 
             // frmHoaDon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -251,6 +289,8 @@
             this.Text = "Quản lý hóa đơn";
             this.grbThongTinHD.ResumeLayout(false);
             this.grbThongTinHD.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -271,5 +311,8 @@
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.Button btnLuu;
+        private System.Windows.Forms.Label lblThemMon;
+        private System.Windows.Forms.ComboBox cboThemMon;
+        private System.Windows.Forms.Button btnThemMon;
     }
 }
