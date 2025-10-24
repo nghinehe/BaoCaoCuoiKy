@@ -69,5 +69,10 @@ namespace QuanLyChuoiCuaHangCaFe
             txtChiNhanh.Text = dgvNhanVien.CurrentRow.Cells[2].Value.ToString();
 
         }
+
+        private void lblQLNhanVien_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

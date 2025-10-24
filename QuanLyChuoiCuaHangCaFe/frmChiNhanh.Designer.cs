@@ -43,6 +43,7 @@
             this.lblMaCN = new System.Windows.Forms.Label();
             this.grbDanhSachCN = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.lblQLChiNhanh = new System.Windows.Forms.Label();
             this.grbChiNhanh.SuspendLayout();
             this.grbDanhSachCN.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -61,7 +62,7 @@
             this.grbChiNhanh.Controls.Add(this.lblMaCN);
             this.grbChiNhanh.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbChiNhanh.ForeColor = System.Drawing.Color.DarkBlue;
-            this.grbChiNhanh.Location = new System.Drawing.Point(23, 14);
+            this.grbChiNhanh.Location = new System.Drawing.Point(23, 91);
             this.grbChiNhanh.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.grbChiNhanh.Name = "grbChiNhanh";
             this.grbChiNhanh.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -183,7 +184,8 @@
             // 
             this.grbDanhSachCN.Controls.Add(this.dataGridView1);
             this.grbDanhSachCN.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grbDanhSachCN.Location = new System.Drawing.Point(23, 311);
+            this.grbDanhSachCN.ForeColor = System.Drawing.Color.Navy;
+            this.grbDanhSachCN.Location = new System.Drawing.Point(23, 387);
             this.grbDanhSachCN.Name = "grbDanhSachCN";
             this.grbDanhSachCN.Size = new System.Drawing.Size(644, 229);
             this.grbDanhSachCN.TabIndex = 1;
@@ -200,11 +202,23 @@
             this.dataGridView1.Size = new System.Drawing.Size(620, 197);
             this.dataGridView1.TabIndex = 0;
             // 
+            // lblQLChiNhanh
+            // 
+            this.lblQLChiNhanh.AutoSize = true;
+            this.lblQLChiNhanh.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQLChiNhanh.ForeColor = System.Drawing.Color.Navy;
+            this.lblQLChiNhanh.Location = new System.Drawing.Point(190, 25);
+            this.lblQLChiNhanh.Name = "lblQLChiNhanh";
+            this.lblQLChiNhanh.Size = new System.Drawing.Size(328, 35);
+            this.lblQLChiNhanh.TabIndex = 2;
+            this.lblQLChiNhanh.Text = "QUẢN LÍ CHI NHÁNH";
+            // 
             // frmChiNhanh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(700, 572);
+            this.ClientSize = new System.Drawing.Size(700, 628);
+            this.Controls.Add(this.lblQLChiNhanh);
             this.Controls.Add(this.grbDanhSachCN);
             this.Controls.Add(this.grbChiNhanh);
             this.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -217,6 +231,7 @@
             this.grbDanhSachCN.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -235,5 +250,6 @@
         private System.Windows.Forms.GroupBox grbDanhSachCN;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.ImageList imageList2;
+        private System.Windows.Forms.Label lblQLChiNhanh;
     }
 }

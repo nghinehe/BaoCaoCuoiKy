@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmNhanVien));
             this.grbThongTinNhanVien = new System.Windows.Forms.GroupBox();
+            this.cboChiNhanh = new System.Windows.Forms.ComboBox();
             this.txtTenNV = new System.Windows.Forms.TextBox();
             this.txtMaNV = new System.Windows.Forms.TextBox();
             this.btnXoa = new System.Windows.Forms.Button();
@@ -42,7 +43,7 @@
             this.lblMaNV = new System.Windows.Forms.Label();
             this.grbDanhsachNV = new System.Windows.Forms.GroupBox();
             this.dgvNhanVien = new System.Windows.Forms.DataGridView();
-            this.cboChiNhanh = new System.Windows.Forms.ComboBox();
+            this.lblQLNhanVien = new System.Windows.Forms.Label();
             this.grbThongTinNhanVien.SuspendLayout();
             this.grbDanhsachNV.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVien)).BeginInit();
@@ -61,7 +62,7 @@
             this.grbThongTinNhanVien.Controls.Add(this.lblMaNV);
             this.grbThongTinNhanVien.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbThongTinNhanVien.ForeColor = System.Drawing.Color.DarkBlue;
-            this.grbThongTinNhanVien.Location = new System.Drawing.Point(25, 26);
+            this.grbThongTinNhanVien.Location = new System.Drawing.Point(25, 99);
             this.grbThongTinNhanVien.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.grbThongTinNhanVien.Name = "grbThongTinNhanVien";
             this.grbThongTinNhanVien.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -69,6 +70,14 @@
             this.grbThongTinNhanVien.TabIndex = 0;
             this.grbThongTinNhanVien.TabStop = false;
             this.grbThongTinNhanVien.Text = "• THÔNG TIN NHÂN VIÊN";
+            // 
+            // cboChiNhanh
+            // 
+            this.cboChiNhanh.FormattingEnabled = true;
+            this.cboChiNhanh.Location = new System.Drawing.Point(176, 154);
+            this.cboChiNhanh.Name = "cboChiNhanh";
+            this.cboChiNhanh.Size = new System.Drawing.Size(368, 33);
+            this.cboChiNhanh.TabIndex = 5;
             // 
             // txtTenNV
             // 
@@ -186,7 +195,8 @@
             // 
             this.grbDanhsachNV.Controls.Add(this.dgvNhanVien);
             this.grbDanhsachNV.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grbDanhsachNV.Location = new System.Drawing.Point(25, 350);
+            this.grbDanhsachNV.ForeColor = System.Drawing.Color.Navy;
+            this.grbDanhsachNV.Location = new System.Drawing.Point(25, 437);
             this.grbDanhsachNV.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.grbDanhsachNV.Name = "grbDanhsachNV";
             this.grbDanhsachNV.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -208,20 +218,25 @@
             this.dgvNhanVien.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvNhanVien_CellClick);
             this.dgvNhanVien.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // cboChiNhanh
+            // lblQLNhanVien
             // 
-            this.cboChiNhanh.FormattingEnabled = true;
-            this.cboChiNhanh.Location = new System.Drawing.Point(176, 154);
-            this.cboChiNhanh.Name = "cboChiNhanh";
-            this.cboChiNhanh.Size = new System.Drawing.Size(368, 33);
-            this.cboChiNhanh.TabIndex = 5;
+            this.lblQLNhanVien.AutoSize = true;
+            this.lblQLNhanVien.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQLNhanVien.ForeColor = System.Drawing.Color.Navy;
+            this.lblQLNhanVien.Location = new System.Drawing.Point(195, 36);
+            this.lblQLNhanVien.Name = "lblQLNhanVien";
+            this.lblQLNhanVien.Size = new System.Drawing.Size(322, 35);
+            this.lblQLNhanVien.TabIndex = 2;
+            this.lblQLNhanVien.Text = "QUẢN LÍ NHÂN VIÊN";
+            this.lblQLNhanVien.Click += new System.EventHandler(this.lblQLNhanVien_Click);
             // 
             // frmNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Snow;
-            this.ClientSize = new System.Drawing.Size(709, 710);
+            this.ClientSize = new System.Drawing.Size(709, 789);
+            this.Controls.Add(this.lblQLNhanVien);
             this.Controls.Add(this.grbDanhsachNV);
             this.Controls.Add(this.grbThongTinNhanVien);
             this.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -236,6 +251,7 @@
             this.grbDanhsachNV.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVien)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -254,5 +270,6 @@
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.ComboBox cboChiNhanh;
+        private System.Windows.Forms.Label lblQLNhanVien;
     }
 }
